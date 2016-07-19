@@ -28,6 +28,6 @@ public class ContactController {
     @RequestMapping(method = RequestMethod.POST)
     public String submit(Contact contact){
         repository.save(contact);
-        return "home";
+        return "redirect:/";
     }
 }
